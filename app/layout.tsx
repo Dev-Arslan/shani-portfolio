@@ -5,9 +5,9 @@ import './globals.css';
 const sans = DM_Sans({ variable: '--font-sans', subsets: ['latin'] });
 const serif = Cormorant_Garamond({ variable: '--font-serif', subsets: ['latin'], weight: ['500', '600'] });
 export const metadata: Metadata = {
-  title: 'Shani — Professional, Entrepreneur & Product Builder',
-  description: 'The professional portfolio of Shani: career, education, businesses, and products.',
-  openGraph: { title: 'Shani — Professional, Entrepreneur & Product Builder', description: 'Career, education, businesses, and products.', images: ['/og.png'] },
-  twitter: { card: 'summary_large_image', title: 'Shani — Professional, Entrepreneur & Product Builder', description: 'Career, education, businesses, and products.', images: ['/og.png'] },
+  title: 'Arslan Ahmed — Software Engineer',
+  description: 'Software Engineer specializing in full-stack development, automation, APIs, and applied AI.',
+  openGraph: { title: 'Arslan Ahmed — Software Engineer', description: 'Full-stack development, automation, APIs, and applied AI.', images: ['/og.png'] },
+  twitter: { card: 'summary_large_image', title: 'Arslan Ahmed — Software Engineer', description: 'Full-stack development, automation, APIs, and applied AI.', images: ['/og.png'] },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en"><body className={`${sans.variable} ${serif.variable}`}>{children}</body></html>; }
