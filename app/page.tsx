@@ -14,6 +14,8 @@ const ventures = [
 ];
 const products = [
   { name: 'MirrorFlow', category: 'AI Automation Platform', text: 'A business automation platform that streamlines repetitive workflows using Python, FastAPI, SQLModel, MySQL, Bootstrap, JavaScript, and Jinja2.', tag: 'View project', href: 'https://dev-arslan.github.io/MirrorFlow-SaaS-/' },
+  { name: 'Automation Bots', category: 'C# & Python Automation', text: 'Automation tools and bots designed to reduce repetitive operations, connect APIs, move data reliably, and improve day-to-day business workflows.', tag: 'Discuss solutions', href: 'mailto:arslanahmeddev350@gmail.com' },
+  { name: 'Cybersecurity & Infrastructure', category: 'Systems, Servers & Networks', text: 'Project experience spanning server administration, network administration, security configuration, database reliability, and secure client environments.', tag: 'Discuss experience', href: 'mailto:arslanahmeddev350@gmail.com' },
 ];
 
 export default function Home() {
@@ -36,7 +38,7 @@ export default function Home() {
         <p className="section-number">01 / Profile</p>
         <div><h2>Full-stack engineering,<br />automation, and applied AI.</h2><p>My work spans C#, Python, Java, APIs, databases, mobile development, testing, and business process automation — backed by practical experience across the complete software lifecycle.</p></div>
       </section>
-      <section className="tech-band" aria-label="Core technology stack"><p>Core technology stack</p><div>{['Python','C#','Java','FastAPI','SQL','MongoDB','GitHub Actions','Selenium'].map((skill) => <span key={skill}>{skill}</span>)}</div></section>
+      <section className="tech-band" aria-label="Core technology stack"><p>Core technology stack</p><div>{['Python','C#','Java','FastAPI','Frontend','Backend','Automation Bots','API Integration','SQL','MongoDB','Server Administration','Network Administration','Cybersecurity','GitHub Actions','Selenium'].map((skill) => <span key={skill}>{skill}</span>)}</div></section>
       <section className="section-pad dark-section" id="career">
         <div className="section-heading"><div><BriefcaseBusiness size={20} /><p className="section-number">02 / Career</p></div><h2>Experience that<br />moves work forward.</h2></div>
         <div className="timeline">{experience.map((item, index) => <article key={item.role}><span className="index">0{index + 1}</span><div><p className="meta">{item.period} · {item.company}</p><h3>{item.role}</h3><p>{item.note}</p></div></article>)}</div>
