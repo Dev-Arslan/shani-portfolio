@@ -26,14 +26,17 @@ export default function Home() {
       </header>
       <section className="hero" id="top">
         <div className="eyebrow"><span /> Professional portfolio · 2026</div>
+        <div className="portrait-frame"><img src="/arslan-ahmed.jpg" alt="Arslan Ahmed, Software Engineer" /><span>Available for opportunities</span></div>
         <h1>Engineering software<br />with <em>purpose.</em></h1>
         <div className="hero-footer"><p>I&apos;m <strong>Arslan Ahmed</strong> — a Software Engineer with 5+ years of full-stack experience, building reliable applications, automation systems, and AI-driven products.</p><a className="scroll-cue" href="#career">Discover my work <ArrowDownRight size={20} /></a></div>
+        <div className="hero-stats" aria-label="Professional highlights"><div><strong>5+</strong><span>Years in software</span></div><div><strong>04</strong><span>Professional roles</span></div><div><strong>01</strong><span>AI platform launched</span></div></div>
         <div className="hero-mark" aria-hidden="true">A</div>
       </section>
       <section className="statement section-pad">
         <p className="section-number">01 / Profile</p>
         <div><h2>Full-stack engineering,<br />automation, and applied AI.</h2><p>My work spans C#, Python, Java, APIs, databases, mobile development, testing, and business process automation — backed by practical experience across the complete software lifecycle.</p></div>
       </section>
+      <section className="tech-band" aria-label="Core technology stack"><p>Core technology stack</p><div>{['Python','C#','Java','FastAPI','SQL','MongoDB','GitHub Actions','Selenium'].map((skill) => <span key={skill}>{skill}</span>)}</div></section>
       <section className="section-pad dark-section" id="career">
         <div className="section-heading"><div><BriefcaseBusiness size={20} /><p className="section-number">02 / Career</p></div><h2>Experience that<br />moves work forward.</h2></div>
         <div className="timeline">{experience.map((item, index) => <article key={item.role}><span className="index">0{index + 1}</span><div><p className="meta">{item.period} · {item.company}</p><h3>{item.role}</h3><p>{item.note}</p></div></article>)}</div>
